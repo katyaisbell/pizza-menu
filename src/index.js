@@ -135,7 +135,16 @@ function Order({ openHour, closeHour }) {
         We're open from {openHour}:00 to {closeHour}:00. Come visit us or order
         online.
       </p>
-      <button className="btn">Order</button>
+      <button
+        className="btn"
+        onClick={() =>
+          alert(
+            "I know you want to order it, but unfortunately, it's just a mock up page. Have a wonderful day!"
+          )
+        }
+      >
+        Order
+      </button>
     </div>
   );
 }
